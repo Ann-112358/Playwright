@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "playwright test",
-    "test:ui": "playwright test --ui"
+    "test:registration": "npx playwright test tests/registration.spec.ts",
+    "test:registration:ui": "npx playwright test --ui tests/registration.spec.ts"
   },
   "repository": {
     "type": "git",
