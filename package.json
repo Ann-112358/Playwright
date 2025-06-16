@@ -1,0 +1,25 @@
+{
+  "name": "playwright",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:registration": "npx playwright test tests/registration.spec.ts",
+    "test:registration:ui": "npx playwright test --ui tests/registration.spec.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ann-112358/Playwright.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ann-112358/Playwright/issues"
+  },
+  "homepage": "https://github.com/Ann-112358/Playwright#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.52.0",
+    "@types/node": "^22.15.30"
+  }
+}
