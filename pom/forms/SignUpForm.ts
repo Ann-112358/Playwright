@@ -35,7 +35,7 @@ export default class SignUpForm extends BasePage {
         await this.confirmSignUp();
     }
 
-    async signUpWithInalidCredentials(name: string, lastName: string, email: string, password: string, rePassword: string){
+    async signUpWithInvalidCredentials(name: string, lastName: string, email: string, password: string, rePassword: string){
         await this.enterData(name, this.nameField);
         await this.enterData(lastName, this.lastNameField);
         await this.enterData(email, this.emailField);

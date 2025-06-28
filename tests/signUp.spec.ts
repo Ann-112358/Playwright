@@ -1,5 +1,5 @@
 import { test } from "@playwright/test";
-import {newUser} from "..//test-data/users";
+import {usersList} from "..//test-data/users";
 import HomePage from "../pom/pages/HomePage";
 import SignUpForm from "../pom/forms/SignUpForm";
 let homePage: HomePage;
@@ -10,11 +10,13 @@ test.describe('Sign up test', () => {
     test.beforeEach(async ({page}) => {
       homePage = new HomePage(page);
       signUpForm = new SignUpForm(page);
-      await homePage.open();
-      await homePage.openSignUpForm();
-    })
-
-    test.describe('Field "Name"', () => {
+      await test.step('Open Home page and click on Sign Up button', async () => {
+        await homePage.open();
+        await homePage.openSignUpForm();
+      });
+    });
+      
+      test.describe('Field "Name"', () => {
         test.describe("Positive cases", () => {
           test("Name with 2 letters is valid", async () =>  {
             await signUpForm.enterData("Li", signUpForm.nameField);
@@ -97,7 +99,7 @@ test.describe('Sign up test', () => {
       test.describe('Field "Email"', () => {
         test.describe("Positive cases", () => {
           test("Email is valid", async () => {
-            await signUpForm.enterData(`${newUser.userEmail}`, signUpForm.emailField)
+            await signUpForm.enterData(`${usersList.newUser.userEmail}`, signUpForm.emailField)
             await signUpForm.verifyDataIsValid(signUpForm.emailField);
           });
         });
@@ -172,8 +174,8 @@ test.describe('Sign up test', () => {
       test.describe('Field "Re-enter password"', () => {
         test.describe("Positive cases", () => {
           test("Re-enter password is valid", async () => {
-            await signUpForm.enterData(`${newUser.userPassword}`, signUpForm.passwordField);
-            await signUpForm.enterData(`${newUser.userPassword}`, signUpForm.repeatPasswordField);       
+            await signUpForm.enterData(`${usersList.newUser.userPassword}`, signUpForm.passwordField);
+            await signUpForm.enterData(`${usersList.newUser.userPassword}`, signUpForm.repeatPasswordField);       
           	await signUpForm.verifyDataIsValid(signUpForm.repeatPasswordField);
           });
         });
@@ -186,7 +188,7 @@ test.describe('Sign up test', () => {
           });
     
           test("Re-enter password is invalid", async () => {
-            await signUpForm.enterData(`${newUser.userPassword}`, signUpForm.passwordField)
+            await signUpForm.enterData(`${usersList.newUser.userPassword}`, signUpForm.passwordField)
             await signUpForm.enterData(`12345Qwerty`, signUpForm.repeatPasswordField);  
             await signUpForm.verifyPasswordIsInvalid(signUpForm.repeatPasswordField);
             await signUpForm.ReEnterPasswordMatchError();
@@ -197,7 +199,7 @@ test.describe('Sign up test', () => {
       test.describe("Sending form", () => {
         test.describe("Positive cases", () => {
           test("New User is created when data is correct", async () => {
-            await signUpForm.signUpWithValidCredentials('Anna', 'Bohachenko', `${newUser.userEmail}`, `${newUser.userPassword}`);
+            await signUpForm.signUpWithValidCredentials('Anna', 'Bohachenko', `${usersList.newUser.userEmail}`, `${usersList.newUser.userPassword}`);
             await signUpForm.verifySuccessMessage();
           });
         });
@@ -208,7 +210,7 @@ test.describe('Sign up test', () => {
           });
 
           test("[Register] button is disabled when data is incorrect", async () => {
-            await signUpForm.signUpWithInalidCredentials('Anna', 'Bohachenko', `${newUser.userEmail}`, `${newUser.userPassword}`, `${newUser.userPassword}1`);
+            await signUpForm.signUpWithInvalidCredentials('Anna', 'Bohachenko', `${usersList.newUser.userEmail}`, `${usersList.newUser.userPassword}`, `${usersList.newUser.userPassword}1`);
             await signUpForm.ConfirmSignUpButtonIsDisabled();
           });
         });
