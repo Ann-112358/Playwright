@@ -2,7 +2,7 @@
   "cookies": [
     {
       "name": "YSC",
-      "value": "pcICl81ska8",
+      "value": "MsG0bsgdFu0",
       "domain": ".youtube.com",
       "path": "/",
       "expires": -1,
@@ -12,40 +12,40 @@
     },
     {
       "name": "__Secure-ROLLOUT_TOKEN",
-      "value": "CLbptNH_g6n7ARCd0aWW15SOAxid0aWW15SOAw%3D%3D",
+      "value": "CPnLteT2io_MPhDz9ea2opyOAxjz9ea2opyOAw%3D%3D",
       "domain": ".youtube.com",
       "path": "/",
-      "expires": 1766685106.960986,
+      "expires": 1766945826.363796,
       "httpOnly": true,
       "secure": true,
       "sameSite": "None"
     },
     {
       "name": "VISITOR_INFO1_LIVE",
-      "value": "FKoxQt5R7RM",
+      "value": "9D3LpwdPmeE",
       "domain": ".youtube.com",
       "path": "/",
-      "expires": 1766685106.961017,
+      "expires": 1766945826.363844,
       "httpOnly": true,
       "secure": true,
       "sameSite": "None"
     },
     {
       "name": "VISITOR_PRIVACY_METADATA",
-      "value": "CgJQTBIhEh0SGwsMDg8QERITFBUWFxgZGhscHR4fICEiIyQlJiAb",
+      "value": "CgJQTBIhEh0SGwsMDg8QERITFBUWFxgZGhscHR4fICEiIyQlJiAP",
       "domain": ".youtube.com",
       "path": "/",
-      "expires": 1766685106.961029,
+      "expires": 1766945826.363861,
       "httpOnly": true,
       "secure": true,
       "sameSite": "None"
     },
     {
       "name": "sid",
-      "value": "s%3Aos948py2q76JiT-ksAD3MjCLVFZ90mmA.0fwCmk5dy1KMDqGBc5RQtG8aYEHrpgYoUbAoNSOJ0dY",
+      "value": "s%3APDqg1LyZcmldKzjSLQKhZbN6WPMCsSre.PoTDH4FvDDrZHFiWLddPhFdFpJ0AlbIUgAJV3YZ74hU",
       "domain": ".forstudy.space",
       "path": "/",
-      "expires": 1751219507.982931,
+      "expires": 1751480227.939119,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -57,7 +57,7 @@
       "localStorage": [
         {
           "name": "ytidb::LAST_RESULT_ENTRY_KEY",
-          "value": "{\"data\":{\"hasSucceededOnce\":true},\"expiration\":1753725107311,\"creation\":1751133107311}"
+          "value": "{\"data\":{\"hasSucceededOnce\":true},\"expiration\":1753985827003,\"creation\":1751393827003}"
         }
       ]
     }
