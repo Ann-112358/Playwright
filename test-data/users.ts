@@ -5,6 +5,8 @@ export const usersList = {
     },
 
     mainUser: {
+        name: `Test`,
+        lastName: `User`,
         userEmail: `validtestuser@test.com`,
         userPassword: `Qwerty123456`
     }

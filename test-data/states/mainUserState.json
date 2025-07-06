@@ -2,7 +2,7 @@
   "cookies": [
     {
       "name": "YSC",
-      "value": "MsG0bsgdFu0",
+      "value": "4L-vex9yRSQ",
       "domain": ".youtube.com",
       "path": "/",
       "expires": -1,
@@ -12,40 +12,40 @@
     },
     {
       "name": "__Secure-ROLLOUT_TOKEN",
-      "value": "CPnLteT2io_MPhDz9ea2opyOAxjz9ea2opyOAw%3D%3D",
+      "value": "CNXVpLy6m77kQxDcsdL0gaiOAxjcsdL0gaiOAw%3D%3D",
       "domain": ".youtube.com",
       "path": "/",
-      "expires": 1766945826.363796,
+      "expires": 1767349415.037676,
       "httpOnly": true,
       "secure": true,
       "sameSite": "None"
     },
     {
       "name": "VISITOR_INFO1_LIVE",
-      "value": "9D3LpwdPmeE",
+      "value": "zpC5wU_NFcQ",
       "domain": ".youtube.com",
       "path": "/",
-      "expires": 1766945826.363844,
+      "expires": 1767349415.037734,
       "httpOnly": true,
       "secure": true,
       "sameSite": "None"
     },
     {
       "name": "VISITOR_PRIVACY_METADATA",
-      "value": "CgJQTBIhEh0SGwsMDg8QERITFBUWFxgZGhscHR4fICEiIyQlJiAP",
+      "value": "CgJQTBIhEh0SGwsMDg8QERITFBUWFxgZGhscHR4fICEiIyQlJiA1",
       "domain": ".youtube.com",
       "path": "/",
-      "expires": 1766945826.363861,
+      "expires": 1767349415.037756,
       "httpOnly": true,
       "secure": true,
       "sameSite": "None"
     },
     {
       "name": "sid",
-      "value": "s%3APDqg1LyZcmldKzjSLQKhZbN6WPMCsSre.PoTDH4FvDDrZHFiWLddPhFdFpJ0AlbIUgAJV3YZ74hU",
+      "value": "s%3Ax9geqokEGHLcSEjW2PI7FknatXqrH3I1.LF3eOE%2FkJVK916eirnwGmBJC66kkKBl830364KXGIIc",
       "domain": ".forstudy.space",
       "path": "/",
-      "expires": 1751480227.939119,
+      "expires": 1751883816.35662,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -57,7 +57,7 @@
       "localStorage": [
         {
           "name": "ytidb::LAST_RESULT_ENTRY_KEY",
-          "value": "{\"data\":{\"hasSucceededOnce\":true},\"expiration\":1753985827003,\"creation\":1751393827003}"
+          "value": "{\"data\":{\"hasSucceededOnce\":true},\"expiration\":1754389415592,\"creation\":1751797415592}"
         }
       ]
     }
