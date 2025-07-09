@@ -48,8 +48,15 @@ export default defineConfig({
       name: 'smoke',
       use: { ...devices['Desktop Chrome'] },
       testIgnore: '*/setup/**.ts',
+      testMatch: '*/e2e/**.ts',
       dependencies: ['setup']
     },
+    {
+      name: 'api',
+      use: { ...devices['Desktop Chrome'] },
+      testMatch: '*/api/**.ts',
+      dependencies: ['setup']
+    }
 
     /*{
       name: 'firefox',
