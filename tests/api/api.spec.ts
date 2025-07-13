@@ -10,7 +10,7 @@ let sid: string;
 
 
     test.describe('Tests for adding cars', () => {
-        test.beforeAll(async ({ request }) => {
+        test.beforeEach(async ({ request }) => {
             authController = new AuthController(request);
             carsController = new CarsController(request);
             sid = await authController.getAuthCookie(usersList.mainUser.userEmail, usersList.mainUser.userPassword);
